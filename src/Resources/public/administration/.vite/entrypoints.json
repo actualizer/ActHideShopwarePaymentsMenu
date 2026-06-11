@@ -1,0 +1,23 @@
+{
+  "base": "/bundles/acthideshopwarepaymentsmenu/administration/",
+  "entryPoints": {
+    "act-hide-shopware-payments-menu": {
+      "css": [],
+      "dynamic": [],
+      "js": [
+        "/bundles/acthideshopwarepaymentsmenu/administration/assets/act-hide-shopware-payments-menu-C9JMIDID.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}

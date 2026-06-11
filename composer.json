@@ -1,0 +1,47 @@
+{
+    "name": "act/hide-shopware-payments-menu",
+    "description": "Hides the Shopware Payments admin main menu entry",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Actualize",
+            "email": "plugin@actualize.de",
+            "homepage": "https://actualize.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "shopware/core": ">=6.7 <6.8",
+        "php": ">=8.3"
+    },
+    "extra": {
+        "shopware-plugin-class": "Act\\HideShopwarePaymentsMenu\\ActHideShopwarePaymentsMenu",
+        "label": {
+            "de-DE": "Actualize: Shopware-Payments-Menüeintrag ausblenden",
+            "en-GB": "Actualize: Hide Shopware Payments menu entry"
+        },
+        "description": {
+            "de-DE": "Blendet den toten Hauptmenü-Eintrag „Shopware Payments\" (samt Übersicht und Einstellungen) im Admin aus. Die ShopwarePayments-App, ihre Zahlarten und das Storefront bleiben unangetastet.",
+            "en-GB": "Hides the dead \"Shopware Payments\" main menu entry (including Overview and Settings) from the admin. The ShopwarePayments app, its payment methods and the storefront stay untouched."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://actualize.de",
+            "en-GB": "https://actualize.de"
+        },
+        "supportLink": {
+            "de-DE": "https://actualize.de",
+            "en-GB": "https://actualize.de"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Act\\HideShopwarePaymentsMenu\\": "src/"
+        }
+    },
+    "scripts": {
+        "format": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension format /ext",
+        "check": "docker run --rm -v $(pwd):/ext shopware/shopware-cli:latest extension validate --full /ext"
+    }
+}
