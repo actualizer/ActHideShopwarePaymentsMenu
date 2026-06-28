@@ -1,14 +1,20 @@
 # ActHideShopwarePaymentsMenu - Hide the Shopware Payments admin menu entry
 
 This plugin removes the **"Shopware Payments"** entries from the administration
-navigation. Shopware aggressively injects this payment method into the admin menu.
-Its primary purpose is to **tidy up the main navigation for shops that do not use
+navigation. Shopware adds this payment offering to the admin menu by default. Its
+primary purpose is to **tidy up the main navigation for shops that do not use
 Shopware Payments**. (Earlier Shopware versions also threw a *"You do not have the
 required permissions"* page when the entry was clicked — that bug is fixed in
 current Shopware, but the unused entries remain.)
 
 Shopware surfaces "Shopware Payments" in **two** separate places in the navigation
 via two different mechanisms, so the plugin filters both.
+
+> **Note:** This is not a statement against Shopware Payments — it is a solid
+> product and a great fit for many shops. This plugin simply addresses the menu
+> clutter for the shops that don't use it: it only hides navigation entries and
+> leaves the app, its payment methods and all functionality fully intact, so it
+> can be enabled again at any time.
 
 ## What it does
 
