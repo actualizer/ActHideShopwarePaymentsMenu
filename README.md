@@ -41,14 +41,12 @@ via two different mechanisms, so the plugin filters both.
   settings.
 - It does **not** touch `SwagExtensionStore`, any core files, the global
   `core.services.disabled` switch, ACL roles or payment methods.
-- It only cleans up the **navigation menu**. Shopware Payments is still reachable
-  via **Settings → Extensions**, where the `ShopwarePayments`
-  app keeps showing up in the extensions list like any other installed extension.
-  This is intentional — the goal is a tidy main menu, not making the app
-  inaccessible.
+- It only removes the **navigation entries** — nothing else. The change is purely
+  cosmetic and fully reversible: deactivate this plugin and the entries reappear.
+  The goal is a tidy main menu, not making the app inaccessible.
 
-Result: both navigation entries are gone, everything else (app, payment methods,
-storefront, the extensions list under Settings) keeps working unchanged.
+Result: both navigation entries are gone, everything else (the app, its payment
+methods and the storefront integration) keeps working unchanged.
 
 ## Requirements
 
