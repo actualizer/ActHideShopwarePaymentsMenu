@@ -1,7 +1,7 @@
 {
-    "name": "act/hide-shopware-payments-menu",
+    "name": "actualizer/hide-shopware-payments-menu",
     "description": "Hides the Shopware Payments admin main menu entry",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
@@ -31,8 +31,8 @@
             "en-GB": "https://actualize.de"
         },
         "supportLink": {
-            "de-DE": "https://actualize.de",
-            "en-GB": "https://actualize.de"
+            "de-DE": "https://github.com/actualizer/ActHideShopwarePaymentsMenu/issues",
+            "en-GB": "https://github.com/actualizer/ActHideShopwarePaymentsMenu/issues"
         }
     },
     "autoload": {

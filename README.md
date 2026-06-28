@@ -51,10 +51,18 @@ storefront, the extensions list under Settings) keeps working unchanged.
 
 ## Installation
 
-This plugin is not published on Packagist.
+### Via Composer (recommended)
+
+```bash
+composer require actualizer/hide-shopware-payments-menu
+```
+
+### Manual
 
 Place the plugin in `custom/plugins/ActHideShopwarePaymentsMenu` (via Git clone,
-ZIP upload in the plugin manager, or your deployment process), then:
+ZIP upload in the plugin manager, or your deployment process).
+
+Then, regardless of the install method, enable it:
 
 ```bash
 bin/console plugin:refresh
