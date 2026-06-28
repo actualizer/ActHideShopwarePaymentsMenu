@@ -1,7 +1,7 @@
 {
     "name": "act/hide-shopware-payments-menu",
     "description": "Hides the Shopware Payments admin main menu entry",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "shopware-platform-plugin",
     "license": "proprietary",
     "authors": [
@@ -14,7 +14,7 @@
     ],
     "require": {
         "shopware/core": ">=6.7 <6.8",
-        "php": ">=8.3"
+        "php": ">=8.4"
     },
     "extra": {
         "shopware-plugin-class": "Act\\HideShopwarePaymentsMenu\\ActHideShopwarePaymentsMenu",
