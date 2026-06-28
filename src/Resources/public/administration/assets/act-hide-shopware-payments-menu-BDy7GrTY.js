@@ -1,0 +1,2 @@
+const i="sw-payments",r="shopware-payments.services.shopware.io";Shopware.Component.override("sw-admin-menu",{computed:{navigationEntries(){var s;const t=this.$super("navigationEntries"),o=(((s=Shopware.Store.get("extensionSdkModules"))==null?void 0:s.modules)??[]).filter(e=>typeof e.baseUrl=="string"&&e.baseUrl.includes(r)).map(e=>e.id);return t.filter(e=>{var n;return e.id!==i&&e.parent!==i&&!o.includes((n=e.params)==null?void 0:n.id)})}}});
+//# sourceMappingURL=act-hide-shopware-payments-menu-BDy7GrTY.js.map
