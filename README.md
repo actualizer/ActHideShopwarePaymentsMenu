@@ -19,10 +19,10 @@ via two different mechanisms, so the plugin filters both.
 ## What it does
 
 - Hides the main menu node with navigation id `sw-payments` (registered by the
-  `SwagExtensionStore` plugin) **and** its child entries (`Übersicht` /
-  `Einstellungen`, the `ShopwarePayments` service app's manifest modules with
+  `SwagExtensionStore` plugin) **and** its child entries (`Overview` /
+  `Settings`, the `ShopwarePayments` service app's manifest modules with
   `parent === "sw-payments"`).
-- Hides the **second** entry that appears under **"Erweiterungen"** (`sw-extension`).
+- Hides the **second** entry that appears under **"Extensions"** (`sw-extension`).
   Newer `ShopwarePayments` versions register it through the Meteor Admin SDK
   (`menuItem.add`) from inside their iframe; such entries get a random id and
   default to `parent: "sw-extension"`, so they cannot be matched by id/parent.
@@ -42,7 +42,7 @@ via two different mechanisms, so the plugin filters both.
 - It does **not** touch `SwagExtensionStore`, any core files, the global
   `core.services.disabled` switch, ACL roles or payment methods.
 - It only cleans up the **navigation menu**. Shopware Payments is still reachable
-  via **Settings → Extensions** (`Einstellungen`), where the `ShopwarePayments`
+  via **Settings → Extensions**, where the `ShopwarePayments`
   app keeps showing up in the extensions list like any other installed extension.
   This is intentional — the goal is a tidy main menu, not making the app
   inaccessible.
