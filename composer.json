@@ -1,7 +1,7 @@
 {
     "name": "actualizer/hide-shopware-payments-menu",
-    "description": "Hides the Shopware Payments admin main menu entry",
-    "version": "1.0.3",
+    "description": "Hides the Shopware Payments admin main menu entry and order detail tab",
+    "version": "1.1.0",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
@@ -19,12 +19,12 @@
     "extra": {
         "shopware-plugin-class": "Act\\HideShopwarePaymentsMenu\\ActHideShopwarePaymentsMenu",
         "label": {
-            "de-DE": "Actualize: Shopware-Payments-Menüeintrag ausblenden",
-            "en-GB": "Actualize: Hide Shopware Payments menu entry"
+            "de-DE": "Actualize: Shopware-Payments-Einträge ausblenden",
+            "en-GB": "Actualize: Hide Shopware Payments entries"
         },
         "description": {
-            "de-DE": "Blendet den toten Hauptmenü-Eintrag „Shopware Payments\" (samt Übersicht und Einstellungen) im Admin aus. Die ShopwarePayments-App, ihre Zahlarten und das Storefront bleiben unangetastet.",
-            "en-GB": "Hides the dead \"Shopware Payments\" main menu entry (including Overview and Settings) from the admin. The ShopwarePayments app, its payment methods and the storefront stay untouched."
+            "de-DE": "Blendet die Shopware-Payments-Einträge im Admin aus: den Hauptmenü-Eintrag samt Untereinträgen und den Reiter in der Bestelldetailansicht. App und Zahlarten bleiben unangetastet.",
+            "en-GB": "Hides the Shopware Payments entries from the admin: the main menu entry with its sub-entries and the tab in the order detail view. The app and its payment methods stay untouched."
         },
         "manufacturerLink": {
             "de-DE": "https://actualize.de",

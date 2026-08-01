@@ -1,20 +1,24 @@
-# ActHideShopwarePaymentsMenu - Hide the Shopware Payments admin menu entry
+# ActHideShopwarePaymentsMenu - Hide the Shopware Payments admin entries
 
 This plugin removes the **"Shopware Payments"** entries from the administration
-navigation. Shopware adds this payment offering to the admin menu by default. Its
-primary purpose is to **tidy up the main navigation for shops that do not use
-Shopware Payments**. (Earlier Shopware versions also threw a *"You do not have the
-required permissions"* page when the entry was clicked — that bug is fixed in
-current Shopware, but the unused entries remain.)
+navigation and from the order detail view. Shopware adds this payment offering to
+the admin menu by default. Its primary purpose is to **tidy up the admin for shops
+that do not use Shopware Payments**. (Earlier Shopware versions also threw a *"You
+do not have the required permissions"* page when the entry was clicked — that bug
+is fixed in current Shopware, but the unused entries remain.)
 
 Shopware surfaces "Shopware Payments" in **two** separate places in the navigation
-via two different mechanisms, so the plugin filters both.
+via two different mechanisms, plus a **third** one as a tab in the order detail
+view, so the plugin filters all three.
+
+The entry under **Settings** is deliberately kept — that one is a sensible place
+for the app's configuration.
 
 > **Note:** This is not a statement against Shopware Payments — it is a solid
-> product and a great fit for many shops. This plugin simply addresses the menu
-> clutter for the shops that don't use it: it only hides navigation entries and
-> leaves the app, its payment methods and all functionality fully intact, so it
-> can be enabled again at any time.
+> product and a great fit for many shops. This plugin simply addresses the admin
+> clutter for the shops that don't use it: it only hides UI entries and leaves the
+> app, its payment methods and all functionality fully intact, so it can be
+> enabled again at any time.
 
 ## What it does
 
@@ -28,9 +32,16 @@ via two different mechanisms, so the plugin filters both.
   default to `parent: "sw-extension"`, so they cannot be matched by id/parent.
   They are matched instead via their SDK module's `baseUrl`, which points at the
   app's service domain (`shopware-payments.services.shopware.io`).
+- Hides the **"Shopware Payments" tab in the order detail view**. That one is not a
+  navigation entry at all: the app registers it through the Meteor Admin SDK
+  (`ui.tabs('sw-order-detail').addTabItem()`), which stores only a `label` and a
+  `componentSectionId`. The tab is traced back to its app through that
+  `componentSectionId` — the matching entry in the `extensionComponentSections`
+  store carries the registering app's `src`, again the app's service domain. This
+  is more robust than matching the `label`, which is translated display text.
 - It does this in the administration only, by overriding the `navigationEntries`
-  computed of `sw-admin-menu` and filtering the entries out before the menu tree is
-  built.
+  computed of `sw-admin-menu` and the `tabExtensions` computed of the tab
+  components, filtering the entries out before they are rendered.
 
 ## What it deliberately does NOT do
 
@@ -41,12 +52,16 @@ via two different mechanisms, so the plugin filters both.
   settings.
 - It does **not** touch `SwagExtensionStore`, any core files, the global
   `core.services.disabled` switch, ACL roles or payment methods.
-- It only removes the **navigation entries** — nothing else. The change is purely
-  cosmetic and fully reversible: deactivate this plugin and the entries reappear.
-  The goal is a tidy main menu, not making the app inaccessible.
+- It does **not** hide the app's entry under **Settings**, and it does not touch the
+  app's own admin pages — those are component sections, not tabs.
+- It only removes the **navigation entries and the order detail tab** — nothing
+  else. The change is purely cosmetic and fully reversible: deactivate this plugin
+  and the entries reappear. The goal is a tidy admin, not making the app
+  inaccessible.
 
-Result: both navigation entries are gone, everything else (the app, its payment
-methods and the storefront integration) keeps working unchanged.
+Result: both navigation entries and the order detail tab are gone, everything else
+(the app, its payment methods and the storefront integration) keeps working
+unchanged.
 
 ## Requirements
 
