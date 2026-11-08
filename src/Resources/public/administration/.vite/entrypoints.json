@@ -2,10 +2,12 @@
   "base": "/bundles/acthideshopwarepaymentsmenu/administration/",
   "entryPoints": {
     "act-hide-shopware-payments-menu": {
-      "css": [],
+      "css": [
+        "/bundles/acthideshopwarepaymentsmenu/administration/assets/act-hide-shopware-payments-menu-wMKc1-sa.css"
+      ],
       "dynamic": [],
       "js": [
-        "/bundles/acthideshopwarepaymentsmenu/administration/assets/act-hide-shopware-payments-menu-BLU-Icnz.js"
+        "/bundles/acthideshopwarepaymentsmenu/administration/assets/act-hide-shopware-payments-menu-BoW6zlvz.js"
       ],
       "legacy": false,
       "preload": []

@@ -65,7 +65,7 @@ unchanged.
 
 ## Requirements
 
-- Shopware 6.7 (`>=6.7 <6.8`)
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
 - PHP 8.4 or higher
 
 ## Installation

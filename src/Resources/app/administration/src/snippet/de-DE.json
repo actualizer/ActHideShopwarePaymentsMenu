@@ -1,0 +1,18 @@
+{
+  "act-hide-shopware-payments-menu": {
+    "settings": {
+      "info": {
+        "howTo": {
+          "title": "So funktioniert's",
+          "item1": "Das Plugin braucht keine Einstellungen. Nach der Aktivierung sind die Shopware-Payments-Einträge für alle Benutzer ausgeblendet.",
+          "item2": "Ausgeblendet werden der Hauptmenü-Eintrag <strong>Shopware Payments</strong> mit seinen Untereinträgen, der Eintrag unter <strong>Erweiterungen</strong> und der Reiter in der Bestelldetailansicht.",
+          "item3": "Der Eintrag unter <strong>Einstellungen</strong> bleibt bewusst sichtbar, dort wird die App weiterhin konfiguriert.",
+          "item4": "Die Shopware-Payments-App und ihre Zahlungsarten bleiben aktiv und unverändert. Die App nicht deaktivieren, sonst lädt die Cookie-Einstellung in der Storefront endlos.",
+          "item5": "Um die Einträge wieder anzuzeigen, genügt es, dieses Plugin zu deaktivieren."
+        },
+        "description": "Blendet die Shopware-Payments-Einträge im Admin aus. App und Zahlungsarten bleiben unangetastet.",
+        "issues": "Probleme oder Feature-Wünsche?"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "act-hide-shopware-payments-menu": {
+    "settings": {
+      "info": {
+        "howTo": {
+          "title": "How it works",
+          "item1": "The plugin needs no configuration. After activation the Shopware Payments entries are hidden for every user.",
+          "item2": "It hides the main menu entry <strong>Shopware Payments</strong> with its sub-entries, the entry under <strong>Extensions</strong> and the tab in the order detail view.",
+          "item3": "The entry under <strong>Settings</strong> deliberately stays visible, the app is still configured there.",
+          "item4": "The Shopware Payments app and its payment methods stay active and unchanged. Do not deactivate the app, otherwise the cookie settings in the Storefront keep loading forever.",
+          "item5": "To show the entries again, deactivating this plugin is enough."
+        },
+        "description": "Hides the Shopware Payments entries from the admin. The app and its payment methods stay untouched.",
+        "issues": "Problems or feature requests?"
+      }
+    }
+  }
+}

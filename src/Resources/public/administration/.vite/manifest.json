@@ -1,8 +1,11 @@
 {
   "main.js": {
-    "file": "assets/act-hide-shopware-payments-menu-BLU-Icnz.js",
+    "file": "assets/act-hide-shopware-payments-menu-BoW6zlvz.js",
     "name": "act-hide-shopware-payments-menu",
     "src": "main.js",
-    "isEntry": true
+    "isEntry": true,
+    "css": [
+      "assets/act-hide-shopware-payments-menu-wMKc1-sa.css"
+    ]
   }
 }

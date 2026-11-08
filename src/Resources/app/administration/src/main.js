@@ -1,3 +1,4 @@
+import './app/component/act-hide-shopware-payments-menu-info';
 /**
  * Hides every "Shopware Payments" entry from the admin navigation, plus the tab the
  * app adds to the order detail view.

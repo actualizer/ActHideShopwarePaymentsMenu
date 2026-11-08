@@ -1,7 +1,7 @@
 {
     "name": "actualizer/hide-shopware-payments-menu",
     "description": "Hides the Shopware Payments admin main menu entry and order detail tab",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
