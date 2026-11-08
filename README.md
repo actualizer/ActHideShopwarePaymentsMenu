@@ -20,6 +20,11 @@ for the app's configuration.
 > app, its payment methods and all functionality fully intact, so it can be
 > enabled again at any time.
 
+## Requirements
+
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
+- PHP 8.4 or higher
+
 ## What it does
 
 - Hides the main menu node with navigation id `sw-payments` (registered by the
@@ -62,11 +67,6 @@ for the app's configuration.
 Result: both navigation entries and the order detail tab are gone, everything else
 (the app, its payment methods and the storefront integration) keeps working
 unchanged.
-
-## Requirements
-
-- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
-- PHP 8.4 or higher
 
 ## Installation
 
